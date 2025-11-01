@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated And Effective Credit Approval Using ANN</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+    <h2>Credit Approval Form</h2>
+    <form action="/predict" method="post">
+        <!-- Numerical Inputs -->
+        <label for="Income">Income:</label><br>
+        <input type="number" name="Income" id="Income" step="any" required><br><br>
+
+        <label for="Credit_Score">Credit Score:</label><br>
+        <input type="number" name="Credit_Score" id="Credit_Score" step="any" required><br><br>
+
+        <label for="Loan_Amount">Loan Amount:</label><br>
+        <input type="number" name="Loan_Amount" id="Loan_Amount" step="any" required><br><br>
+
+        <label for="Years_Employed">Years Employed:</label><br>
+        <input type="number" name="Years_Employed" id="Years_Employed" step="any" required><br><br>
+
+        <label for="Points">Points:</label><br>
+        <input type="number" name="Points" id="Points" step="any" required><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>

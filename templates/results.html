@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Loan Approval Prediction Result</h1>
+
+        <div class="card">
+            <h2 class="result">{{ prediction }}</h2>
+            <p class="prob">Model Probability: <strong>{{ probability }}</strong></p>
+        </div>
+
+        <div class="details">
+            <h3>Applicant Details</h3>
+            <table>
+                <tr>
+                    <th>Income</th>
+                    <td>{{ income }}</td>
+                </tr>
+                <tr>
+                    <th>Credit Score</th>
+                    <td>{{ credit_score }}</td>
+                </tr>
+                <tr>
+                    <th>Loan Amount</th>
+                    <td>{{ loan_amount }}</td>
+                </tr>
+                <tr>
+                    <th>Years Employed</th>
+                    <td>{{ years_employed }}</td>
+                </tr>
+                <tr>
+                    <th>Points</th>
+                    <td>{{ points }}</td>
+                </tr>
+            </table>
+        </div>
+
+        <a href="{{ url_for('home') }}" class="btn">Go Back</a>
+    </div>
+</body>
+</html>
