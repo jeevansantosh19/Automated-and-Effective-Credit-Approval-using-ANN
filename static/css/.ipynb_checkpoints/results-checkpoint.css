@@ -1,0 +1,88 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+}
+
+.title {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.card {
+    background-color: #f1f8ff;
+    border-left: 5px solid #3a7bd5;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.result {
+    font-size: 1.4rem;
+    color: #0066cc;
+    margin: 0;
+}
+
+.prob {
+    color: #555;
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+.details {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.details h3 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    color: #444;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 18px;
+    font-size: 1rem;
+    background-color: #3a7bd5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2a5fa0;
+}
